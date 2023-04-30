@@ -187,20 +187,20 @@ function generateCommentHtml(comment){
                 <p>${comment.at ? `<span>${comment.at} </span>` : ""} ${comment.postText}</p>
             </div>
             <div class="counter-el">
-                <img data-counter-plus="${comment.id}" tabindex="${comment.id}" src="assets/icon-plus.svg">
+                <img data-counter-plus="${comment.id}" tabindex="1" src="assets/icon-plus.svg">
                 <p>${comment.postLikes}</p>
-                <img data-counter-minus="${comment.id}" tabindex="${comment.id}" src="assets/icon-minus.svg">
+                <img data-counter-minus="${comment.id}" tabindex="1" src="assets/icon-minus.svg">
             </div>
-            ${!comment.you ? `<div data-reply-btn-for-tab="${comment.id}" tabindex="${comment.id}" class="reply-btn action">
+            ${!comment.you ? `<div data-reply-btn-for-tab="${comment.id}" tabindex="1" class="reply-btn action">
                 <img data-reply-btn-for-tab="${comment.id}" src="assets/icon-reply.svg">
                 <p data-reply-btn-for-tab="${comment.id}">Reply</p>
             </div>` :
             `<div class="delete-edit-btn action">
-                <div data-delete-btn-for-tab="${comment.id}" tabindex="${comment.id}" class="delete">
+                <div data-delete-btn-for-tab="${comment.id}" tabindex="1" class="delete">
                     <img data-delete-btn-for-tab="${comment.id}" src="assets/icon-delete.svg">
                     <p data-delete-btn-for-tab="${comment.id}">Delete</p>
                 </div>
-                <div data-edit-btn-for-tab="${comment.id}" tabindex="${comment.id}" class="edit">
+                <div data-edit-btn-for-tab="${comment.id}" tabindex="1" class="edit">
                     <img data-edit-btn-for-tab="${comment.id}" src="assets/icon-edit.svg">
                     <p data-edit-btn-for-tab="${comment.id}">Edit</p>
                 </div>
